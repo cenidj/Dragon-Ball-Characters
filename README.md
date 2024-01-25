@@ -10,3 +10,4 @@ Created with the intention to practice SwiftUI, and iOS mobile development.
 - Async-Await calls
 
 ## Screenshots 📱
+ ![Dragon Ball App Images](https://github.com/cenidj/Dragon-Ball-Characters/blob/main/DragonBall.jpg?raw=true)
