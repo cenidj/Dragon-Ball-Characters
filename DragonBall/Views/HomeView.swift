@@ -8,8 +8,21 @@
 import SwiftUI
 
 struct HomeView: View {
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationStack {
+            ZStack {
+                LinearGradient(colors: [.thirdColor, .secondarySecondColor], startPoint: .top, endPoint: .bottomTrailing)
+                    .ignoresSafeArea()
+                
+                ScrollView {
+                    CharactersView()
+                        .padding()
+                }
+            }
+            .navigationTitle("Characters")
+            .toolbarBackground(LinearGradient(colors: [.thirdColor, .secondarySecondColor], startPoint: .topLeading, endPoint: .bottomTrailing), for: .navigationBar)
+        }
     }
 }
 
